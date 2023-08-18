@@ -1,0 +1,88 @@
+@import"./Main.css";
+.Container{
+    margin-top: 130px;
+}
+.Education_Container {
+    width: 100%;
+    height: 100%;
+}
+.Tittle{
+    display: flex;
+    padding-left: 25px;
+    font-size: 25px;
+}
+.School_Container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 16px;
+}
+
+.School{
+    display: flex;
+    flex-direction:row;
+    height: 120px;
+    padding-left: 10px;
+}
+.Icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.Line {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.vl {
+    width: 3px;
+    height: 100%;
+    background-color: var(--brown);
+}
+
+.year{
+    height: 20px;
+    color: var(--white);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.graduate{
+    height: 70px;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    padding-left: 10px;
+}
+.h_container{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    .School_Container{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+    .Container{
+        margin-top: 0px;
+    }
+    .Nav_Container{
+        margin-top: 150px;
+    }
+    .School{
+        width: 80%;
+        margin-left: 20px;
+    }
+    .Education_Container{
+        width: 80%;
+        margin-left: 100px;
+        height: 60%;
+    }
+}

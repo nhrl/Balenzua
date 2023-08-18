@@ -1,0 +1,98 @@
+@import "./Main.css";
+
+body{
+    height: 300vh;
+}
+.Hobbies_Container{
+    width: 85%;
+    height: 95%;
+    overflow: hidden;
+}
+.Container{
+    margin-top: 50px;
+}
+.Tittle{
+    width: 90%;
+    margin-left: 1px;
+    font-size: 25px;
+}
+.hobbies{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+.my_hobbies{
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.Hobbies_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    height: 60px;
+    color: var(--white);
+    background-color: var(--brown);
+    cursor: pointer;
+    border-top: 5px solid var(--yellow);
+    border-radius: 0 0 20px 20px;
+}
+.Hobbies_img{
+    width: 100%;
+    height: 70%;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+
+.my_hobbies:hover .Hobbies_name {
+    color: var(--yellow);
+}
+.my_hobbies:hover .Hobbies_img{
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (min-width: 1360px) {
+    .Hobbies_Container{
+        margin-left: 100px;
+    }
+    .hobbies{
+        grid-template-columns: 500px 500px;
+        width: 90%;
+        column-gap: 40px;
+        height: 250px;
+        padding-left: 70px;
+    }
+    body{
+        height: 150vh;
+    }
+
+    .Nav_Container{
+        position: fixed;
+        margin-left: 15px;
+    }
+}
+
+@media  screen and (min-width:1000px) and (max-width:1360px) {
+    .Nav_Container{
+        position: fixed;
+        margin-left: 15px;
+    }
+    .hobbies{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        column-gap: 40px;
+        height: 250px;
+        padding-left: 70px;
+    }
+    .Tittle{
+        padding-left: 60px;
+    }
+}
